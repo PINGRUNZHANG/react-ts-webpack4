@@ -15,10 +15,7 @@ module.exports = {
     'plugin:unicorn/recommended',
     'plugin:promise/recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
-    'prettier/react',
-    'prettier/unicorn',
+    'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -35,7 +32,7 @@ module.exports = {
       },
     },
   },
-  plugins: ['react', 'unicorn', 'promise', '@typescript-eslint'],
+  plugins: ['react', 'unicorn', 'promise', '@typescript-eslint', 'prettier'],
   rules: {
     'import/extensions': [
       ERROR,
@@ -77,6 +74,7 @@ module.exports = {
     ],
     'unicorn/prefer-query-selector': ERROR,
     'unicorn/no-null': OFF,
+    'unicorn/prefer-module': OFF,
 
     '@typescript-eslint/no-useless-constructor': ERROR,
     '@typescript-eslint/no-empty-function': WARN,

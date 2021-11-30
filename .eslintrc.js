@@ -106,5 +106,16 @@ module.exports = {
     'class-methods-use-this': ERROR,
     'jsx-quotes': [ERROR, 'prefer-single'],
     'global-require': OFF,
+    'unicorn/import-style': [
+      'error',
+      {
+        styles: {
+          util: false,
+          path: {
+            named: true,
+          },
+        },
+      },
+    ],
   },
 };

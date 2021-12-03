@@ -30,6 +30,7 @@ module.exports = {
       node: {
         extensions: ['.tsx', '.ts', '.js', '.json'],
       },
+      typescript: {},
     },
   },
   plugins: ['react', 'unicorn', 'promise', '@typescript-eslint', 'prettier'],
@@ -117,5 +118,6 @@ module.exports = {
         },
       },
     ],
+    'import/no-import-module-exports': OFF,
   },
 };
